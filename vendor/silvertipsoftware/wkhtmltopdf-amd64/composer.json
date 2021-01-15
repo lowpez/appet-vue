@@ -1,0 +1,25 @@
+{
+    "name": "silvertipsoftware/wkhtmltopdf-amd64",
+    "description": "Convert html to pdf using webkit (qtwebkit). Static linked linux binary for amd64 systems.",
+    "keywords": ["pdf", "thumbnail", "snapshot", "wkhtmltopdf", "convert", "binary"],
+    "license": "LGPL-3.0-only",
+    "homepage": "http://wkhtmltopdf.org/",
+    "authors": [
+        {
+            "name": "Andre Sonnichsen",
+            "email": "andre@silvertipsoftware.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "bin": [
+        "bin/wkhtmltopdf-amd64"
+    ],
+    "replace": {
+        "h4cc/wkhtmltopdf-amd64": "0.12.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "silvertipsoftware\\WKHTMLToPDF\\": ""
+        }
+    }
+}

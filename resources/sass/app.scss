@@ -1,0 +1,73 @@
+// Fonts
+//@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.slider {
+    width: 92%;
+    margin: 100px auto;
+}
+
+.slick-slide {
+    margin: 0px 5px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+}
+
+.slick-active {
+    opacity: 1;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+.upload-avatar-wrapper {
+    display: none;
+    padding-bottom: 30px;
+}
+.upload-avatar-wrapper .upload-avatar {
+    width:300px;
+    height: 350px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.upload-avatar-wrapper.ready {
+    display: block;
+}
+.fe-error {
+    border: 1px solid red;
+}
+
+#avatarModal.avatar-mode-save #pick {
+    display: none;
+}
+#avatarModal.avatar-mode-select #use {
+    display: none;
+}
