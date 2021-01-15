@@ -46,11 +46,9 @@
                         <a class="btn btn-block btn-lg btn-primary mt-3" href="{{ route('social.auth', 'facebook') }}">
                             Facebook
                         </a>
-
-
-                        <a class="btn btn-block btn-lg btn-primary mt-3" href="{{ route('social.auth', 'twitter') }}">
-                            Twitter
-                        </a>
+                        <a class="btn btn-block btn-lg btn-danger mt-3" href="{{ route('social.auth', 'google') }}">
+                            Google
+                        </a>                        
                     </form>
                 </div>
             </div>

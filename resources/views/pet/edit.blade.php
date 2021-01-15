@@ -165,7 +165,7 @@
                 cities: [],
                 especies: [],
                 razas: [],
-                imagen: '/media/uploads/pets/no.jpg',
+                imagen: "{{ '/media/uploads/pets/' . $pet->avatar }}",
                 full: '',
                 croppie: null,
                 mensaje: false,
@@ -277,9 +277,13 @@
                         this.imagen = response
                         console.log(this.imagen)
                         this.mascota.avatar = this.imagen
-                        axios.put('/pet-imagen', {img: this.imagen, full: this.full, id: this.mascota.id})
+                        axios.put('/pet-imagen', {avatar: this.imagen, full: this.full, id: this.mascota.id})
                             .then((response) => {
                                 console.log(response.data)
+                                this.mensaje = true
+                                this.texto_mensaje = 'Imagen actualizada correctamente'
+                                this.alert = 'success'
+                                $("#confirm-edit-pet").modal("show")
                             })
                         $('#newAvatar').modal('hide');
                     })
